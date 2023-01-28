@@ -8,7 +8,7 @@ import joblib
 model = joblib.load('xgbpipe.joblib')
 st.set_page_config(
         page_title="Titanic",
-        page_icon=":ship:",
+        page_icon="ship_boat_vessel_icon_183225.ico",
         layout="wide",
     )
 st.title('Did they survive? :ship:')
