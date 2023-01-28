@@ -6,6 +6,11 @@ import pandas as pd
 import joblib
 
 model = joblib.load('xgbpipe.joblib')
+ st.set_page_config(
+        page_title="Titanic",
+        page_icon=":ship:",
+        layout="wide",
+    )
 st.title('Did they survive? :ship:')
 # PassengerId,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
 passengerid = st.text_input("Input Passenger ID", '123456') 
