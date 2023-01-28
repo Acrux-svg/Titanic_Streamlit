@@ -26,7 +26,7 @@ def predict():
     prediction = model.predict(X)
     if prediction[0] == 1: 
         st.success('Passenger Survived :thumbsup:')
-    elif prediction[0] == 0: 
+    else:
         st.error('Passenger did not Survive :thumbsdown:') 
 
 trigger = st.button('Predict', on_click=predict)
