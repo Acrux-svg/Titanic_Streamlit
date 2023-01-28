@@ -6,7 +6,7 @@ import pandas as pd
 import joblib
 
 model = joblib.load('xgbpipe.joblib')
- st.set_page_config(
+st.set_page_config(
         page_title="Titanic",
         page_icon=":ship:",
         layout="wide",
